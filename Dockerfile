@@ -25,6 +25,10 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user \
     && mkdir -p /home/$user/.composer \
     && chown -R $user:$user /home/$user
 
+RUN git config --global --add safe.directory /var/www && \
+    chown -R www-data:www-data /var/www && \
+    chmod -R 755 /var/www
+
 WORKDIR /var/www
 
 # Copy the content from project
