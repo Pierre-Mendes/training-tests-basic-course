@@ -5,7 +5,7 @@
 # Training Tests Basic Course Exercises
 
 ![PHP Version](https://img.shields.io/badge/PHP-8.4-blue)
-![Docker](https://img.shields.io/badge/docker-257bd6?style=for-the-badge&logo=docker&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-257bd6)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-finalizado-brightgreen)
 
