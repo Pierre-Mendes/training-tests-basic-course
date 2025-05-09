@@ -34,6 +34,7 @@ class HappyNumberChecker
             $sum += $digit * $digit;
             $number = (int) ($number / 10);
         }
+
         return $sum;
     }
 }
