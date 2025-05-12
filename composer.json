@@ -15,7 +15,9 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "App\\": "src/Classes/"
+            "App\\": "src/Classes/",
+            "Interfaces\\": "src/Interfaces/",
+            "Services\\": "src/Services/"
         }
     },
     "autoload-dev": {
