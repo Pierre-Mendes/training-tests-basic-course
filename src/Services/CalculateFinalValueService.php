@@ -15,7 +15,7 @@ readonly class CalculateFinalValueService
     {
         $totalValue = $shoppingCart->getTotalValue();
         if ($totalValue < 100) {
-            $calculatedShipping = $this->shipping->calculateShipping($shoppingCart->getUser()->cep);
+            $calculatedShipping = $this->shipping->calculateShipping($shoppingCart->getUser()->zipCode);
 
             return $totalValue + $calculatedShipping;
         }
