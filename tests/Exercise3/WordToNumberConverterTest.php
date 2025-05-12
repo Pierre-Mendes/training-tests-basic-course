@@ -1,6 +1,6 @@
 <?php
 
-namespace Exercicio3;
+namespace Exercise3;
 
 use App\WordToNumberConverter;
 use PHPUnit\Framework\TestCase;
