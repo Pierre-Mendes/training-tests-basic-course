@@ -6,6 +6,6 @@ class User
 {
     public function __construct(
         public string $name,
-        public string $cep
+        public string $zipCode
     ) {}
 }
