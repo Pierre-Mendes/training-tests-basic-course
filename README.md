@@ -32,8 +32,68 @@ Creating automated tests to solve the following problems:
 - [`phpunit`](https://phpunit.de/index.html)
 
 ### 📁 Project structure:
+`/src/:` Root directory project
+
 `/src/Classes:` Classes for testing
-`/tests/:` Automated Tests folder
+
+`/src/Interfaces:` Interfaces from project
+
+`/src/Services:` Services from project
+
+`/src/tests/:` Automated Tests folder
+
+## 🌐 Structure
+```
+training-tests-basic-course/
+├── src/
+│   ├── Classes/
+│   │   └── HappyNumberChecker.php
+│   │   └── PrimeNumberChecker.php
+│   │   └── Product.php
+│   │   └── ShoppingCart.php
+│   │   └── SumMultiples.php
+│   │   └── User.php
+│   │   └── WordAnalyzer.php
+│   │   └── WordToNumberConverter.php
+│   ├── Interfaces/
+│   │   └── ShippingInterface.php
+│   └── Services/
+│       └── CalculateFinalValueService.php
+├── tests/
+│   └── Exercise1/
+│       └── SumMultiplesTest.php
+│   └── Exercise2/
+│       └── HappyNumberCheckerTest.php
+│   └── Exercise3/
+│       └── PrimeNumberCheckerTest.php
+│       └── WordAnalyzerTest.php
+│       └── WordToNumberConverterTest.php
+│   └── Exercise4/
+│       └── CalculateFinalValueServiceTest.php
+│       └── ShoppingCartTest.php
+├── composer.json
+├── composer.lock
+└── phpunit.xml
+```
+
+## ✅ Testes
+To run automated tests with PHPUnit:
+- At the terminal
+```sh
+./vendor/bin/phpunit
+```
+- In the docker container
+```sh
+docker-compose run --rm app ./vendor/bin/phpunit
+```
+- To run a specific test e.g.:
+```sh
+./vendor/bin/phpunit tests/Exercise1/SumMultiplesTest.php
+```
+
+```sh
+docker-compose run --rm app ./vendor/bin/phpunit tests/Exercise1/SumMultiplesTest.php
+```
 
 ## 🛠️ How to Run the Project
 
