@@ -40,13 +40,14 @@ class CalculateFinalValueServiceTest extends TestCase
         $shippingInterfaceMock = $this->createMock(ShippingInterface::class);
         $shippingInterfaceMock->expects($this->never())
             ->method('calculateShipping');
-
         $product = new Product('Headphone', 120);
         $user = new User('Lucas', '87654321');
         $shoppingCart = new ShoppingCart($user);
         $shoppingCart->addProduct($product, 1);
 
         $service = new CalculateFinalValueService($shippingInterfaceMock);
-        $this->assertEquals(120.00, $service->execute($shoppingCart));
+        $result = $service->execute($shoppingCart);
+
+        $this->assertEquals(120.00, $result);
     }
 }
